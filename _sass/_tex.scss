@@ -1,0 +1,41 @@
+.center {
+	text-align: center;
+}
+.flushleft {
+	text-align: left;
+}
+.flushright {
+	text-align: right;
+}
+
+.tex-e {
+	text-transform: uppercase;
+	vertical-align: -0.5ex;
+
+	margin: {
+		left: -0.1667em;
+		right: -0.125em;
+	}
+}
+.latex-a {
+	font-size: 0.85em;
+	text-transform: uppercase;
+	vertical-align: 0.15em;
+
+	margin: {
+		left: -0.36em;
+		right: -0.15em;
+	}
+}
+.xetex-e {
+	transform: scaleX(-1);
+
+	display: inline-block;
+	text-transform: uppercase;
+	vertical-align: -0.5ex;
+
+	margin: {
+		left: -0.125em;
+		right: -0.125em;
+	}
+}

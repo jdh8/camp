@@ -1,0 +1,44 @@
+.Title {
+	font-weight: bold;
+	color: Magenta;
+}
+.Statement,
+.Type {
+	font-weight: bold;
+}
+.Underlined {
+	text-decoration: underline;
+}
+.Error {
+	color: White;
+	background-color: Red;
+}
+.Todo {
+	color: Blue;
+	background-color: Yellow;
+}
+
+.dark > {
+	.LineNr     { color: Yellow }
+	.Comment    { color: #80a0ff }
+	.Constant   { color: #ffa0a0 }
+	.Special    { color: Orange }
+	.Identifier { color: #40ffff }
+	.Statement  { color: #ffff60 }
+	.PreProc    { color: #ff80ff }
+	.Type       { color: #60ff60 }
+	.Underlined { color: #80a0ff }
+}
+
+*,
+.light > {
+	.LineNr     { color: Brown }
+	.Comment    { color: Blue }
+	.Constant   { color: Magenta }
+	.Special    { color: SlateBlue }
+	.Identifier { color: DarkCyan }
+	.Statement  { color: Brown }
+	.PreProc    { color: Purple }
+	.Type       { color: SeaGreen }
+	.Underlined { color: SlateBlue }
+}

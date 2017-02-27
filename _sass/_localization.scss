@@ -1,0 +1,34 @@
+q:before {
+	content: "“";
+	content: open-quote;
+}
+q:after {
+	content: "”";
+	content: close-quote;
+}
+
+q:lang(fr) {
+	quotes: "«" "»" "‹" "›";
+}
+q:lang(ja),
+q:lang(zh) {
+	quotes: "「" "」" "『" "』";
+}
+q,
+q:lang(zh-Hans) {
+	quotes: "“" "”" "‘" "’";
+}
+
+em%cjk {
+	border-bottom: 2px dotted;
+	font-style: normal;
+}
+blockquote%cjk,
+cite%cjk {
+	font-style: normal;
+}
+:lang(zh):not(:lang(zh-Latn)),
+:lang(ja):not(:lang(ja-Latn)),
+:lang(ko):not(:lang(ko-Latn)) {
+	@extend %cjk;
+}
